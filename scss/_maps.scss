@@ -1,0 +1,12 @@
+$fonts: (
+    Arial:green,
+    Cambria: blue,
+    Georgia: red,
+);
+
+@each $font, $color in $fonts {
+    .font__#{$font} {
+        font-family: #{$font};
+        color: #{$color}
+    }
+}
